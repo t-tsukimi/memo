@@ -13,7 +13,7 @@ Last update:2019-04-01
 [MS officeのユニバーサルデザインカラーパレット](http://www2.cudo.jp/wp/?p=5014)(カラーユニバーサルデザイン機構)
 - Microsoft officeのカラーパレットです。このパレットに乗っている色を使えば全ての人に見やすいグラフやスライドが作成できます。
 - Windows用は[こちら](http://www2.cudo.jp/wp/?p=4966)  
-![](https://github.com/t-tsukimi/memo/blob/master/image/universal_color_palette.png)  
+![](https://github.com/t-tsukimi/memo/blob/master/image/universal_color_palette-2.png)  
 
 
 [Sim Daltonism](https://michelf.ca/projects/mac/sim-daltonism/)
