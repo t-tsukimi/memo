@@ -21,6 +21,7 @@ Last update:2019-04-01
 ![](https://github.com/t-tsukimi/memo/blob/master/image/Sim_Daltonism_for_Mac.png)  
 
 ### VS Code
+---
 - [日本語表示](https://qiita.com/ntkgcj/items/e77331932c7983dea830)
 - [Python拡張機能](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python):エラーの提示や関数の補完・説明 
 - コマンドパレット(mac)：command + shift + p
