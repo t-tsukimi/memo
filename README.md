@@ -19,3 +19,13 @@ Last update:2019-04-01
 [Sim Daltonism](https://michelf.ca/projects/mac/sim-daltonism/)
 - 異なる色覚多様性を持つ人にとってPC上の画像がどのように見えるかシミュレーションするMacアプリ。  
 ![](https://github.com/t-tsukimi/memo/blob/master/image/Sim_Daltonism_for_Mac.png)  
+
+### VS Code
+- [日本語表示](https://qiita.com/ntkgcj/items/e77331932c7983dea830)
+- [Python拡張機能](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python):エラーの提示や関数の補完・説明 
+- コマンドパレット(mac)：command + shift + p
+− 設定(mac)：command + ,
+- 設定で文字のフォントをRicty、サイズを14に指定
+- 拡張機能でテーマを[PaperColor Redux Theme](https://marketplace.visualstudio.com/items?itemName=mrworkman.papercolor-vscode-redux)に
+- [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):マークダウンファイルの作成支援  
+-
