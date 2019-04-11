@@ -40,3 +40,8 @@ Last update:2019-04-01
 ### Python2と3の違い
 ---
 - Python3では「/」は真の除算 (true division) で実数になり、「//」は切り捨て除算 (floor division) で整数部分を返す。Python2では除数も被除数も整数の場合は「/」で切り捨て除算が行われ整数を返す。
+
+### 英語
+---
+- [Grammarly](https://app.grammarly.com/)：文法チェック。無料版でも十分な機能。機械的なチェックなので全て正しいわけではないが、MS Wordより詳細にチェックしてくれる。  
+- [inMeXes](https://docman.dbcls.jp/im/)：論文に頻出する単語・熟語を高速に検索できる。統合TVで[使い方動画](https://togotv.dbcls.jp/20180126.html)が公開されている。
