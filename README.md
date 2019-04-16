@@ -1,7 +1,7 @@
 Author:Tomoya Tsukimi  
 Last update:2019-04-01  
 <font color="red">注意</font>：使用は自己責任でお願いします  
-<br />  
+<br>  
 
 ### ユニバーサルカラーデザイン
 ---
@@ -19,6 +19,7 @@ Last update:2019-04-01
 [Sim Daltonism](https://michelf.ca/projects/mac/sim-daltonism/)
 - 異なる色覚多様性を持つ人にとってPC上の画像がどのように見えるかシミュレーションするMacアプリ。  
 ![](https://github.com/t-tsukimi/memo/blob/master/image/Sim_Daltonism_for_Mac.png)  
+<br>
 
 ### VS Code
 ---
@@ -30,18 +31,28 @@ Last update:2019-04-01
 - 拡張機能でテーマを[PaperColor Redux Theme](https://marketplace.visualstudio.com/items?itemName=mrworkman.papercolor-vscode-redux)に
 - [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):マークダウンファイルの作成支援  
 -
+<br>
 
 ### Python3
 ---
 #### [PEP8](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator)推奨事項
 - 二項演算子の両端にはスペースを入れる
-- 改行するときは二項演算子が先頭に来るようにする
+- 改行するときは二項演算子が先頭に来るようにする  
+<br>
 
 ### Python2と3の違い
 ---
-- Python3では「/」は真の除算 (true division) で実数になり、「//」は切り捨て除算 (floor division) で整数部分を返す。Python2では除数も被除数も整数の場合は「/」で切り捨て除算が行われ整数を返す。
+- Python3では「/」は真の除算 (true division) で実数になり、「//」は切り捨て除算 (floor division) で整数部分を返す。Python2では除数も被除数も整数の場合は「/」で切り捨て除算が行われ整数を返す。  
+<br>
 
 ### 英語
 ---
 - [Grammarly](https://app.grammarly.com/)：文法チェック。無料版でも十分な機能。機械的なチェックなので全て正しいわけではないが、MS Wordより詳細にチェックしてくれる。  
-- [inMeXes](https://docman.dbcls.jp/im/)：論文に頻出する単語・熟語を高速に検索できる。統合TVで[使い方動画](https://togotv.dbcls.jp/20180126.html)が公開されている。
+- [inMeXes](https://docman.dbcls.jp/im/)：論文に頻出する単語・熟語を高速に検索できる。統合TVで[使い方動画](https://togotv.dbcls.jp/20180126.html)が公開されている。  
+<br>
+
+### プログラミング学習
+---
+- [ドットインストール](https://dotinstall.com/):様々な言語やIT関連の知識を3分程度の動画で学べる。コンテンツ数はプログラミング学習サービスの中で最も多いと思う。一部有料（月額980円）。
+- [Progate](https://prog-8.com/)：様々な言語について「スライドで学習→テスト」を全てwebブラウザ上で実行できる。UIが秀逸で説明も分かりやすいので初めてプログラミングを勉強する人にお勧め。一部有料（月額980円）。
+- [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。
