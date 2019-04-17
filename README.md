@@ -30,7 +30,8 @@ Last update:2019-04-01
 - 設定で文字のフォントをRicty、サイズを14に指定
 - 拡張機能でテーマを[PaperColor Redux Theme](https://marketplace.visualstudio.com/items?itemName=mrworkman.papercolor-vscode-redux)に
 - [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):マークダウンファイルの作成支援  
--
+- [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)：マークダウンファイルをPDFやhtmlに変換。コマンドパレットを開いてpdfと入力する。  
+- 
 <br>
 
 ### Python3
@@ -53,6 +54,6 @@ Last update:2019-04-01
 
 ### プログラミング学習
 ---
-- [ドットインストール](https://dotinstall.com/):様々な言語やIT関連の知識を3分程度の動画で学べる。コンテンツ数はプログラミング学習サービスの中で最も多いと思う。一部有料（月額980円）。
+- [ドットインストール](https://dotinstall.com/)：様々な言語やIT関連の知識を3分程度の動画で学べる。コンテンツ数はプログラミング学習サービスの中で最も多いと思う。一部有料（月額980円）。
 - [Progate](https://prog-8.com/)：様々な言語について「スライドで学習→テスト」を全てwebブラウザ上で実行できる。UIが秀逸で説明も分かりやすいので初めてプログラミングを勉強する人にお勧め。一部有料（月額980円）。
 - [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。
