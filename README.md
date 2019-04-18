@@ -31,7 +31,11 @@ Last update:2019-04-01
 - 拡張機能でテーマを[PaperColor Redux Theme](https://marketplace.visualstudio.com/items?itemName=mrworkman.papercolor-vscode-redux)に
 - [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):マークダウンファイルの作成支援  
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)：マークダウンファイルをPDFやhtmlに変換。コマンドパレットを開いてpdfと入力する。  
-- 
+- launch.jsonの13行目に「"stopOnEntry": true」を追記し、デバッグ環境を整える([参考](https://www.atmarkit.co.jp/ait/articles/1806/05/news023.html))。
+- launch.jsonは作業フォルダの.vscodeフォルダにある。vs codeの左端上から4つ目のデバッグアイコン→歯車アイコンで開けられる。開けられない場合はエクスプローラーからフォルダーを開く。
+- デバッグはF5で開始し、F10で1行ずつ実行することが可能。行番号左をクリックすることでブレークポイントの設定ができる。
+-
+
 <br>
 
 ### Python3
@@ -56,4 +60,12 @@ Last update:2019-04-01
 ---
 - [ドットインストール](https://dotinstall.com/)：様々な言語やIT関連の知識を3分程度の動画で学べる。コンテンツ数はプログラミング学習サービスの中で最も多いと思う。一部有料（月額980円）。
 - [Progate](https://prog-8.com/)：様々な言語について「スライドで学習→テスト」を全てwebブラウザ上で実行できる。UIが秀逸で説明も分かりやすいので初めてプログラミングを勉強する人にお勧め。一部有料（月額980円）。
-- [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。
+- [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。  
+<br>
+
+### linuxコマンド
+---
+- wgetで保存先を指定
+```sh
+wget -P path/to/yourdir http://path/to/file.txt
+```
