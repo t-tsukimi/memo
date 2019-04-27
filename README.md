@@ -1,5 +1,5 @@
 Author:Tomoya Tsukimi  
-Last update:2019-04-01  
+Last update:2019-04-19  
 <font color="red">注意</font>：使用は自己責任でお願いします  
 <br>  
 
@@ -48,6 +48,8 @@ Last update:2019-04-01
 ### Python2と3の違い
 ---
 - Python3では「/」は真の除算 (true division) で実数になり、「//」は切り捨て除算 (floor division) で整数部分を返す。Python2では除数も被除数も整数の場合は「/」で切り捨て除算が行われ整数を返す。  
+- python3はraw_inputがないため、inputを使用する。
+- python3はprintが関数になっている。
 <br>
 
 ### 英語
@@ -63,9 +65,33 @@ Last update:2019-04-01
 - [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。  
 <br>
 
+### その他の分野学習
+---
+
 ### linuxコマンド
 ---
 - wgetで保存先を指定
 ```sh
 wget -P path/to/yourdir http://path/to/file.txt
 ```
+- ジョークコマンド
+```sh
+brew install sl
+sl #鉄板
+
+brew install cmatrix
+cmatrix #映画のmatrixっぽい感じ
+
+brew install asciiquarium
+asciiquarium #水族館、魚の種類がなかなか豊富
+
+brew install nyancat
+nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
+```
+![](https://github.com/t-tsukimi/memo/blob/master/image/nyancat.png)  
+
+
+### シェルスクリプト
+---
+- 引数の#0にはスクリプト名が格納される。なので実際の引数が格納されるのは#1から。
+- [変数の置換方法](https://qiita.com/aosho235/items/c36568830a8d47288284)。
