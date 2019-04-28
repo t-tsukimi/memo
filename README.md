@@ -67,6 +67,7 @@ Last update:2019-04-19
 
 ### その他の分野学習
 ---
+- [JMOOC](https://www.jmooc.jp/): 日本語による「MOOC」（Massive Open Online Courses＝大規模公開オンライン講座）のポータルサイト。複数の配信プラットフォームに対して横断検索ができる。
 
 ### linuxコマンド
 ---
@@ -95,3 +96,12 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ---
 - 引数の#0にはスクリプト名が格納される。なので実際の引数が格納されるのは#1から。
 - [変数の置換方法](https://qiita.com/aosho235/items/c36568830a8d47288284)。
+
+
+### Macに入れると捗るもの
+---
+- [homebrew](https://brew.sh/index_ja): 様々なツールを「brew ○○」でインストールできる。
+- [HyperSwitch](https://bahoom.com/hyperswitch): WindowsのAlt + tabのようにウインドウ単位で切り替えができる。
+- [Skitch](https://evernote.com/intl/jp/products/skitch): スクショソフト。撮影した画像に記号やテキストを簡単に書き込める。Evernoteと連携しているためファイル管理も楽。
+- [CopyClip](https://itunes.apple.com/jp/app/copyclip-clipboard-history/id595191960?mt=12): コピー履歴を保存でき選択してペーストできる。
+- [Karabiner](https://pqrs.org/osx/karabiner/): キーボードの割り付けを行える。外付けキーボードを使用する際には必須。Windows用キーボードをMac用に設定するには[こちらの記事](https://mainguild.com/how-to-karabiner-elements/)が参考になる。
