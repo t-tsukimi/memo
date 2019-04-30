@@ -42,7 +42,7 @@ Last update:2019-04-19
 -  MacにPython3をインストール([参考](https://basicincome30.com/python-install-mac))
 ```sh
 brew install pyenv
-#mojaveだと権限の問題でインストールできないので権限変更
+#権限の問題でインストールできなかったので変更
 sudo chown -R $(whoami) /usr/local/share/man/man8
 chmod u+w /usr/local/share/man/man8
 
@@ -152,3 +152,4 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ### Git
 ---
 - 複数のパソコンからgit pushするにはgithubにsshキーを登録する([参考](http://pyoonn.hatenablog.com/entry/2014/10/21/163852))。ただし、その場合でもコミットは別の人と認識される。
+- 「failed to push some refs to」と表示されたときのはfetchしてmergeする([参考](https://qiita.com/takanatsu/items/fc89de9bd11148da1438))。
