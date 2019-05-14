@@ -154,3 +154,47 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ---
 - 複数のパソコンからgit pushするにはgithubにsshキーを登録する([参考](http://pyoonn.hatenablog.com/entry/2014/10/21/163852))。ただし、その場合でもコミットは別の人と認識される。
 - 「failed to push some refs to ~」と表示されたときのはfetchしてmergeする([参考](https://qiita.com/takanatsu/items/fc89de9bd11148da1438))。
+<br>  
+
+
+### QIIME2のインストール（後で正式なものを作成する）
+---
+- pyenvにインストールする場合
+```sh
+#minicondaのインストール 
+pyenv install —list 
+pyenv install miniconda3-4.3.30 
+
+#minicondaがきちんとインストールされたか確認 
+pyenv install versions 
+
+#miniconda環境に切り替え、古いパッケージをアップデート&wgetをインストール 
+pyenv global miniconda3-4.3.30 
+conda update conda 
+Yes 
+conda install wget 
+
+#qiime2のファイルをダウンロードし、qiime2環境を構築 
+wget https://data.qiime2.org/distro/core/qiime2-2019.4-py36-osx-conda.yml 
+conda env create -n qiime2-2019.4 --file qiime2-2019.4-py36-osx-conda.yml 
+
+#QIIME2を起動 
+source activate qiime2-2019.4 
+qiime --help 
+#これでエラーが出ずにヘルプが表示されればインストール成功
+```
+- 以降使用する際は以下の通り
+```sh
+#今の環境を確認する 
+pyenv install versions 
+#miniconda環境出ない場合、miniconda環境に切り替え 
+pyenv global miniconda3-4.3.30 
+#qiime2を起動 
+source activate qiime2-2019.4 
+
+#終了 
+conda deactivate 
+```
+- なお、[QIIME2の公式マニュアル](https://docs.qiime2.org/2019.4/install/native/)での起動は上記の通りだが、QIIME2インストール終了後に表示される起動方法は「conda activate qiime2-2019.4」だった。
+- anaconda3-5.3.1にはなぜかインストールできなかった。  
+- 上記の方法でできなければVirtual BoxかDockerで入れることも可能。
