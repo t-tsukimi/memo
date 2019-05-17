@@ -97,6 +97,7 @@ list(range(0,10))
 ---
 - [Grammarly](https://app.grammarly.com/)：文法チェック。無料版でも十分な機能。機械的なチェックなので全て正しいわけではないが、MS Wordより詳細にチェックしてくれる。  
 - [inMeXes](https://docman.dbcls.jp/im/)：論文に頻出する単語・熟語を高速に検索できる。統合TVで[使い方動画](https://togotv.dbcls.jp/20180126.html)が公開されている。  
+- [Life Science Dictionary Tool WebExtension](https://chrome.google.com/webstore/detail/life-science-dictionary-t/glamiehbjfdcihghdlcjlckipojhnocp/related?hl=ja)：chromeの拡張機能。マウスオーバーで英訳が表示される。  
 <br>
 
 ### プログラミング学習
