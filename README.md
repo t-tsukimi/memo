@@ -198,10 +198,16 @@ conda deactivate
 ```
 - なお、[QIIME2の公式マニュアル](https://docs.qiime2.org/2019.4/install/native/)での起動は上記の通りだが、QIIME2インストール終了後に表示される起動方法は「conda activate qiime2-2019.4」だった。
 - anaconda3-5.3.1にはなぜかインストールできなかった。  
-- 上記の方法でできなければVirtual BoxかDockerで入れることも可能。
+- 上記の方法でできなければVirtual BoxかDockerで入れることも可能。  
+<br>  
 
 ### R
 ---
 - install.pachageでソースファイルからインストールしようとするとコンパイルでこけることがある。その場合は"install from source?"という質問に対して"n"と回答すれば良い。
 ![](https://github.com/t-tsukimi/memo/blob/master/image/R_compilation.png)  
-- veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。
+- veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。  
+<br>  
+
+### プレゼン
+---
+- [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu): デザイナーさんによるデザイン資料。伝えることに優先順位をつけて認知不可を下げることが重要とのこと。
