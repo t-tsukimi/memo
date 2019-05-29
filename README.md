@@ -133,6 +133,7 @@ brew install nyancat
 nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/nyancat.png)  
+- [bashワンライナー集](https://onceupon.github.io/Bash-Oneliner/)
 <br>
 
 ### シェルスクリプト
@@ -211,8 +212,10 @@ conda deactivate
 
 ### プレゼン
 ---
-- [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu): デザイナーさんによるデザイン資料。伝えることに優先順位をつけて認知不可を下げることが重要とのこと。
+- [これだけ守れば見やすくなるデザインの基礎](https://speakerdeck.com/kinakobooster/koredakeshou-rebajian-yasukunarudezainfalseji-chu): デザイナーさんによるデザイン資料。伝えることに優先順位をつけて認知不可を下げることが重要とのこと。  
+<br>  
 
 ### バイオインフォマティクス
 ---
 - [先進ゲノム支援　中級者向け情報解析講習会](https://www.genome-sci.jp/lecture20181st): 2018年の11月19-21日に開催された講習会。Pythonプログラミングの基礎から多変量解析、機械学習まで。web上に動画及びコードも全てアップされているので独学も可能。
+<br>  
