@@ -106,6 +106,7 @@ list(range(0,10))
 - [ドットインストール](https://dotinstall.com/)：様々な言語やIT関連の知識を3分程度の動画で学べる。コンテンツ数はプログラミング学習サービスの中で最も多いと思う。一部有料（月額980円）。
 - [Progate](https://prog-8.com/)：様々な言語について「スライドで学習→テスト」を全てwebブラウザ上で実行できる。UIが秀逸で説明も分かりやすいので初めてプログラミングを勉強する人にお勧め。一部有料（月額980円）。
 - [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。  
+- [「情報Ⅰ」教員研修用教材](http://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/05/15/1416758_005.pdf): pythonベースで基礎が詳しく書かれている。
 <br>
 
 ### その他の分野学習
@@ -133,7 +134,7 @@ brew install nyancat
 nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/nyancat.png)  
-- [bashワンライナー集](https://onceupon.github.io/Bash-Oneliner/)
+- [bashワンライナー集](https://onceupon.github.io/Bash-Oneliner/): 後でゆっくり見ておきたい。
 <br>
 
 ### シェルスクリプト
@@ -218,4 +219,15 @@ conda deactivate
 ### バイオインフォマティクス
 ---
 - [先進ゲノム支援　中級者向け情報解析講習会](https://www.genome-sci.jp/lecture20181st): 2018年の11月19-21日に開催された講習会。Pythonプログラミングの基礎から多変量解析、機械学習まで。web上に動画及びコードも全てアップされているので独学も可能。
+<br>  
+
+
+### 統計
+---
+- [とてもとても難しい 一般化線形モデル with R](http://cogpsy.educ.kyoto-u.ac.jp/personal/Kusumi/datasem13/shrasuna1.pdf): 一般化線型モデルについてコンパクトにまとまっている。
+<br>  
+
+### コンピュータ
+---
+- [PASSMARK](https://www.passmark.com/): CPUなどのベンチマークサイト
 <br>  
