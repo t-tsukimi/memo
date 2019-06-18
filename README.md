@@ -231,3 +231,11 @@ conda deactivate
 ---
 - [PASSMARK](https://www.passmark.com/): CPUなどのベンチマークサイト
 <br>  
+
+
+
+### 文章・レポート作成
+---
+- [菌名の記載ルール](http://kuchem.kyoto-u.ac.jp/seika/shiraishi/note/report.html)
+<br>  
+
