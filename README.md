@@ -239,3 +239,7 @@ conda deactivate
 - [菌名の記載ルール](http://kuchem.kyoto-u.ac.jp/seika/shiraishi/note/report.html)
 <br>  
 
+### ランダムフォレスト
+---
+- ブートストラップサンプリング: N個の標本から<u>**重複を許して**</u>N個をサンプリングすること。
+- OOB(Out-Of-Bag): ブートストラップサンプリングで選ばれなかったサンプル。これを用いてモデル精度が評価される(OOB error)。理論的にはネイピア数の逆数(約36%)になる。[参考](https://qiita.com/kenmatsu4/items/1152d6e5634921d9246e)
