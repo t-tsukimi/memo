@@ -237,7 +237,6 @@ rgl.postscript("iris_3d.svg", fmt = "svg")
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.svg)  
 - 複数のグラフを1つにまとめる。
 ```r
-#複数のグラフをまとめる---------------------------------------------------------
 library(gridExtra)
 library(ggplot2)
 
