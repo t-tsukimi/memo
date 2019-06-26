@@ -235,6 +235,36 @@ rgl.postscript("iris_3d.svg", fmt = "svg")
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.png)
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.svg)  
+- 複数のグラフを1つにまとめる。
+```r
+#複数のグラフをまとめる---------------------------------------------------------
+library(gridExtra)
+library(ggplot2)
+
+dt <- iris
+#ggplot2のテーマを比べてみる
+g1 <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_void()
+g2 <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_classic()
+g3 <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_bw()
+g4 <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_gray()
+g5 <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_dark()
+
+png("4graphs.png", res = 150, width = 2000, height = 1000)
+grid.arrange(g1, g2, g3, g4, g5, nrow = 2)
+dev.off()
+```
+![](https://github.com/t-tsukimi/memo/blob/master/image/4graphs.png)
+
 <br>  
 
 ### プレゼン
@@ -273,3 +303,7 @@ rgl.postscript("iris_3d.svg", fmt = "svg")
 ### バックアップ
 ---
 - BaffaloのNASをTime Machineの保存先に設定する([参考](https://www.buffalo.jp/support/faq/detail/15092.html))。Webからの設定は反映に時間がかかることがある。
+
+### markdown
+---
+- pdfは画像とみなされないのか「![](URL)」でも反映されない。
