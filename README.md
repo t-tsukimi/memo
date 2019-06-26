@@ -208,7 +208,31 @@ conda deactivate
 ---
 - install.pachageでソースファイルからインストールしようとするとコンパイルでこけることがある。その場合は"install from source?"という質問に対して"n"と回答すれば良い。
 ![](https://github.com/t-tsukimi/memo/blob/master/image/R_compilation.png)  
-- veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。  
+- veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。 
+- 散布図
+```r
+library(ggplot2)
+library(rgl)
+
+dt <- iris
+colnames(iris)
+# [1] "Sepal.Length" "Sepal.Width"  "Petal.Length" "Petal.Width" 
+# [5] "Species"  
+
+#ggplot2で二次元プロット
+pdf(file = "iris_2d.pdf")
+g <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
+        geom_point() + 
+        theme_classic()
+g
+dev.off()
+
+#rglで3次元プロット
+plot3d(dt[, 1:3], col = rainbow(3)[dt$Species], size = 4)
+rgl.postscript("iris_3d.pdf", fmt = "pdf")
+```
+![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.png)  
+![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.png)  
 <br>  
 
 ### プレゼン
@@ -243,3 +267,7 @@ conda deactivate
 ---
 - ブートストラップサンプリング: N個の標本から<u>**重複を許して**</u>N個をサンプリングすること。
 - OOB(Out-Of-Bag): ブートストラップサンプリングで選ばれなかったサンプル。これを用いてモデル精度が評価される(OOB error)。理論的にはネイピア数の逆数(約36%)になる。[参考](https://qiita.com/kenmatsu4/items/1152d6e5634921d9246e)
+
+### バックアップ
+---
+- BaffaloのNASをTime Machineの保存先に設定する([参考](https://www.buffalo.jp/support/faq/detail/15092.html))。Webからの設定は反映に時間がかかることがある。
