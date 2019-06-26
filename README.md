@@ -211,6 +211,8 @@ conda deactivate
 - veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。 
 - 散布図
 ```r
+rm(list = ls())
+
 library(ggplot2)
 library(rgl)
 
@@ -220,7 +222,7 @@ colnames(iris)
 # [5] "Species"  
 
 #ggplot2で二次元プロット
-pdf(file = "iris_2d.pdf")
+png(file = "iris_2d.png")
 g <- ggplot(data = dt, aes(x = Sepal.Length, y = Sepal.Width, colour = Species)) +
         geom_point() + 
         theme_classic()
@@ -229,7 +231,7 @@ dev.off()
 
 #rglで3次元プロット
 plot3d(dt[, 1:3], col = rainbow(3)[dt$Species], size = 4)
-rgl.postscript("iris_3d.pdf", fmt = "pdf")
+rgl.postscript("iris_3d.svg", fmt = "svg")
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.png)
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.svg)  
