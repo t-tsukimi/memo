@@ -231,8 +231,8 @@ dev.off()
 plot3d(dt[, 1:3], col = rainbow(3)[dt$Species], size = 4)
 rgl.postscript("iris_3d.pdf", fmt = "pdf")
 ```
-![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.png)  
-![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.png)  
+![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.pdf)
+![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.pdf)  
 <br>  
 
 ### プレゼン
