@@ -32,9 +32,10 @@ Last update:2019-04-19
 - [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint):マークダウンファイルの作成支援  
 - [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)：マークダウンファイルをPDFやhtmlに変換。コマンドパレットを開いてpdfと入力する。  
 - launch.jsonの13行目に「"stopOnEntry": true」を追記し、デバッグ環境を整える([参考](https://www.atmarkit.co.jp/ait/articles/1806/05/news023.html))。
-- launch.jsonは作業フォルダの.vscodeフォルダにある。vs codeの左端上から4つ目のデバッグアイコン→歯車アイコンで開けられる。開けられない場合はエクスプローラーからフォルダーを開く。
+- launch.jsonは作業フォルダの.vscodeフォルダにある。vs codeの左端上から4つ目のデバッグアイコン→歯車アイコンで開けられる。開けられない場合はエクスプローラー(虫眼鏡のアイコン)からフォルダーを開く。
 - デバッグはF5で開始し、F10で1行ずつ実行することが可能。行番号左をクリックすることでブレークポイントの設定ができる。
 - デフォルトのPythonへのPathはsettings.json内のpython.pythonPathで変更できる。ない場合は追記すればいい([参考](https://code.visualstudio.com/docs/python/settings-reference#_general-settings))。  
+- pythonインタープリタに作成した環境が出ないときは、setting.jsonに読み込む環境を指定する。[参考](https://tekunabe.hatenablog.jp/entry/2018/12/28/vscode_venv_default_rolad)
 <br>
 
 ### Python3
@@ -158,6 +159,8 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 ---
 - 複数のパソコンからgit pushするにはgithubにsshキーを登録する([参考](http://pyoonn.hatenablog.com/entry/2014/10/21/163852))。ただし、その場合でもコミットは別の人と認識される。
 - 「failed to push some refs to ~」と表示されたときのはfetchしてmergeする([参考](https://qiita.com/takanatsu/items/fc89de9bd11148da1438))。
+- [Steins;Git](https://o2project.github.io/steins-git/): Steins;Gateの世界観を通してGitを分かりやすく説明。ネタバレがあるので必ずSteins;Gateプレイ後に参照すべき。
+- [わかばちゃんと学ぶ Git使い方入門](https://www.amazon.co.jp/%E3%82%8F%E3%81%8B%E3%81%B0%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E5%AD%A6%E3%81%B6-Git%E4%BD%BF%E3%81%84%E6%96%B9%E5%85%A5%E9%96%80-%E6%B9%8A%E5%B7%9D%E3%81%82%E3%81%84-ebook/dp/B071D4D6XX): Gitを知らない人でもとりあえずこの1冊があれば、clone, add, push, commitは実行できるようになる。
 <br>  
 
 
@@ -235,7 +238,7 @@ rgl.postscript("iris_3d.svg", fmt = "svg")
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_2d.png)
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_3d.svg)  
-- 複数のグラフを1つにまとめる。
+- 複数のグラフを1つにまとめる([参考](https://qiita.com/nozma/items/cd98ec7938e0783d5d89))。
 ```r
 library(gridExtra)
 library(ggplot2)
@@ -306,3 +309,15 @@ dev.off()
 ### markdown
 ---
 - pdfは画像とみなされないのか「![](URL)」でも反映されない。
+
+
+### 可視化
+---
+- [PlotsOfData](https://huygens.science.uva.nl/PlotsOfData/): 棒グラフ、箱ひげ図、バイオリンプロットのきれいな図をwebで作成できる。
+
+### PC周辺器
+---
+- EPSONのプリンターでスキャンした画像をPCに取り込む。  
+1. 書類をスキャナに置く
+2. プリンタとスキャナ→スキャナをクリック
+3. スキャナの状態が読み取られるので、確認してスキャンをクリック
