@@ -283,6 +283,8 @@ dev.off()
 ### 統計
 ---
 - [とてもとても難しい 一般化線形モデル with R](http://cogpsy.educ.kyoto-u.ac.jp/personal/Kusumi/datasem13/shrasuna1.pdf): 一般化線型モデルについてコンパクトにまとまっている。
+- [感度・特異度・ROCK曲線](http://jeaweb.jp/activities/files/contest2016_1.pptx): 2016年度日本疫学会スライドコンテスト受賞作品、分かりやすくまとまっている。
+
 <br>  
 
 ### コンピュータ
@@ -296,6 +298,12 @@ dev.off()
 ---
 - [菌名の記載ルール](http://kuchem.kyoto-u.ac.jp/seika/shiraishi/note/report.html)
 <br>  
+
+### 分類
+---
+- [門外漢のための「学名」のはなし](https://www.jstage.jst.go.jp/article/kagakutoseibutsu1962/42/2/42_2_99/_pdf/-char/ja)
+<br>  
+
 
 ### ランダムフォレスト
 ---
