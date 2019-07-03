@@ -277,6 +277,8 @@ dev.off()
 ### バイオインフォマティクス
 ---
 - [先進ゲノム支援　中級者向け情報解析講習会](https://www.genome-sci.jp/lecture20181st): 2018年の11月19-21日に開催された講習会。Pythonプログラミングの基礎から多変量解析、機械学習まで。web上に動画及びコードも全てアップされているので独学も可能。
+- エントロピー: 生物学においては塩基配列の偏りを示す際に用いられる。0-2で塩基の偏りが強いほど0に近づく。[参考](https://slidesplayer.net/slide/16557467/)
+- 有限オートマトン: 主にモチーフ解析などに使用される。[参考](http://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-5.pdf)  
 <br>  
 
 
