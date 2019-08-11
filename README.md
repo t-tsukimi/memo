@@ -41,6 +41,7 @@ Last update:2019-04-19
 ### Python3
 ---
 -  MacにPython3をインストール([参考](https://basicincome30.com/python-install-mac))
+- Macにanacondaをインストール([参考](https://github.com/ghmagazine/python_stat_sample/blob/master/tutorial/env_const/macos.md))
 ```sh
 brew install pyenv
 #権限の問題でインストールできなかったので変更
@@ -108,6 +109,7 @@ list(range(0,10))
 - [Progate](https://prog-8.com/)：様々な言語について「スライドで学習→テスト」を全てwebブラウザ上で実行できる。UIが秀逸で説明も分かりやすいので初めてプログラミングを勉強する人にお勧め。一部有料（月額980円）。
 - [ディープラーニング入門](https://tutorials.chainer.org/ja/index.html)：株式会社Preferred Networksが提供する深層学習のチュートリアルだが、Pythonの初歩から説明しているためPython学習に有効。Google Colaboratoryを利用することで環境構築を行う必要がない。無料。  
 - [「情報Ⅰ」教員研修用教材](http://www.mext.go.jp/component/a_menu/education/micro_detail/__icsFiles/afieldfile/2019/05/15/1416758_005.pdf): pythonベースで基礎が詳しく書かれている。
+- [algorithm-visualizer.org](https://algorithm-visualizer.org/): アルゴリズムを可視化したものとそのコードが閲覧できる。
 <br>
 
 ### その他の分野学習
@@ -285,13 +287,15 @@ dev.off()
 ### 統計
 ---
 - [とてもとても難しい 一般化線形モデル with R](http://cogpsy.educ.kyoto-u.ac.jp/personal/Kusumi/datasem13/shrasuna1.pdf): 一般化線型モデルについてコンパクトにまとまっている。
-- [感度・特異度・ROCK曲線](http://jeaweb.jp/activities/files/contest2016_1.pptx): 2016年度日本疫学会スライドコンテスト受賞作品、分かりやすくまとまっている。
+- [感度・特異度・ROCK曲線(藤田保健衛生大学柿崎先生)](http://jeaweb.jp/activities/files/contest2016_1.pptx): 2016年度日本疫学会スライドコンテスト受賞作品、イメージ図が多く使われており分かりやすい。
+- [医療統計勉強会-第5回比率と分割表(東北大学宮田先生)](http://www.cardio.med.tohoku.ac.jp/newmember/pdf/ms/15_5T.pdf): 具体的なデータが用いられているので上の資料でイメージをつかんでもらった後におすすめ。
 
 <br>  
 
 ### コンピュータ
 ---
 - [PASSMARK](https://www.passmark.com/): CPUなどのベンチマークサイト
+- ここ1週間ほどmacのエクセル2016で「ファイル形式またはファイル拡張子が正しくありません」と表示される。エクセルを最新バージョン（16.27(19071500)）にアップデートすると直った。
 <br>  
 
 
@@ -331,3 +335,8 @@ dev.off()
 1. 書類をスキャナに置く
 2. プリンタとスキャナ→スキャナをクリック
 3. スキャナの状態が読み取られるので、確認してスキャンをクリック
+
+
+### 危機管理
+---
+[重大事故のときにどうするか](https://note.mu/mmiya/n/n746eb2e36f81): ヤフー重大事故のときに陣頭指揮をとられた人の記事。リーダーが行うべき10項目が記されている。
