@@ -269,7 +269,7 @@ dev.off()
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/4graphs.png)
 
-- y軸の値を制御する。点を線分で結ぶ
+- y軸の値を制御する。
 ```r
 library(ggplot2)
 library(gridExtra)
@@ -304,7 +304,20 @@ g3 <- ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
 png("iris_ycontrol.png", res = 150, width = 2000, height = 1000)
 grid.arrange(g0, g1, g2, g3, nrow = 2)
 dev.off()
+```
+![](https://github.com/t-tsukimi/memo/blob/master/image/iris_ycontrol.png)
 
+- 箱ひげ図の上から点を線分で結ぶ
+```r
+library(ggplot2)
+library(gridExtra)
+
+#データはいつものirisを使用
+data(iris)
+
+#基本形
+g0 <- ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + 
+        geom_boxplot()
 
 #点を追加
 #geome_pointを追加すればいい
@@ -331,8 +344,8 @@ g6 <- ggplot(iris[seq(1, 150, 5), ],
 png("iris_box_dot_line.png", res = 150, width = 2000, height = 1000)
 grid.arrange(g0, g4, g5, g6, nrow = 2)
 dev.off()
+
 ```
-![](https://github.com/t-tsukimi/memo/blob/master/image/iris_ycontrol.png)
 ![](https://github.com/t-tsukimi/memo/blob/master/image/iris_box_dot_line.png)
 
 <br>  

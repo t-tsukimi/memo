@@ -33,6 +33,17 @@ grid.arrange(g0, g1, g2, g3, nrow = 2)
 dev.off()
 
 
+
+library(ggplot2)
+library(gridExtra)
+
+#データはいつものirisを使用
+data(iris)
+
+#基本形
+g0 <- ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + 
+        geom_boxplot()
+
 #点を追加
 #geome_pointを追加すればいい
 g4 <- ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) + 
