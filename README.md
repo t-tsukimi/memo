@@ -269,7 +269,7 @@ dev.off()
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/4graphs.png)
 
-- y軸の値を制御する。
+- y軸の値を制御する（[参考1](https://stackoverflow.com/questions/27433798/how-can-i-change-the-y-axis-figures-into-percentages-in-a-barplot), [参考2](https://www.karada-good.net/analyticsr/r-64)）。
 ```r
 library(ggplot2)
 library(gridExtra)
