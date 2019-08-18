@@ -163,6 +163,15 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 - 「failed to push some refs to ~」と表示されたときのはfetchしてmergeする([参考](https://qiita.com/takanatsu/items/fc89de9bd11148da1438))。
 - [Steins;Git](https://o2project.github.io/steins-git/): Steins;Gateの世界観を通してGitを分かりやすく説明。ネタバレがあるので必ずSteins;Gateプレイ後に参照すべき。
 - [わかばちゃんと学ぶ Git使い方入門](https://www.amazon.co.jp/%E3%82%8F%E3%81%8B%E3%81%B0%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E5%AD%A6%E3%81%B6-Git%E4%BD%BF%E3%81%84%E6%96%B9%E5%85%A5%E9%96%80-%E6%B9%8A%E5%B7%9D%E3%81%82%E3%81%84-ebook/dp/B071D4D6XX): Gitを知らない人でもとりあえずこの1冊があれば、clone, add, push, commitは実行できるようになる。
+- 新しくレポジトリを作成するときの手順  
+```sh
+#記録したいフォルダに移動
+git init
+git add 記録したいファイル名
+git commit -m "初期コミット"
+git remote add origin https://github.com/t-tsukimi/レポジトリ名.git
+git push origin master
+```
 <br>  
 
 
