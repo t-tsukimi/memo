@@ -62,6 +62,10 @@ source ~/your_venv/bin/activate #仮想環境の有効化
 deactivate #仮想環境の無効化
 
 ```
+- 不要になったパッケージやキャッシュの削除([参考](https://weblabo.oscasierra.net/python-anaconda-clean/))
+```sh
+conda clean --all
+```
 
 #### [PEP8](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator)推奨事項
 - 二項演算子の両端にはスペースを入れる
@@ -94,6 +98,14 @@ list(range(0,10))
 # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 <br>
+
+### Docker
+---
+- ストレージを圧迫しているキャッシュを削除する([参考](https://qiita.com/ktsujichan/items/726e0f896e30b355fee1))
+```
+rm -rf ~/Library/Containers/com.docker.docker/Data/*
+```
+
 
 ### 英語
 ---
@@ -154,6 +166,7 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 - [CopyClip](https://itunes.apple.com/jp/app/copyclip-clipboard-history/id595191960?mt=12): コピー履歴を保存でき選択してペーストできる。
 - [Karabiner](https://pqrs.org/osx/karabiner/): キーボードの割り付けを行える。外付けキーボードを使用する際には必須。Windows用キーボードをMac用に設定するには[こちらの記事](https://mainguild.com/how-to-karabiner-elements/)が参考になる。Python書くときに便利なセミコロンをコロンにする方法は[こちら](https://pycarnival.com/semicolontocolon/)。  
 - [BackgroundMusic](https://github.com/kyleneideck/BackgroundMusic): アプリごとに細かい音量調整が行える。
+- Time machine: 最初から入っている。バックアップに便利。PCのストレージ容量が10GBを切るとうまくバックアップされないことがあるので注意。
 <br>
 
 
