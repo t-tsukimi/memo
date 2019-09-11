@@ -66,6 +66,10 @@ deactivate #仮想環境の無効化
 ```sh
 conda clean --all
 ```
+- anacondaでpython2.7環境を作成する。
+```sh
+conda create -n py27 python=2.7 anaconda
+```
 
 #### [PEP8](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator)推奨事項
 - 二項演算子の両端にはスペースを入れる
@@ -102,10 +106,14 @@ list(range(0,10))
 ### Docker
 ---
 - ストレージを圧迫しているキャッシュを削除する([参考](https://qiita.com/ktsujichan/items/726e0f896e30b355fee1))
+- docker runのオプション（[参考](https://webdesign-manga.com/docker_run_option/)）: -it ホストとコンテナの標準入出力をつなげる, -v ホストとコンテナ間でファイルを共有する
 ```
 rm -rf ~/Library/Containers/com.docker.docker/Data/*
 ```
-
+- Cannot connect to the Docker daemon. Is the docker daemon running on this host?という表示が出た場合、一度Dockerをシャットダウンして再起動すれば問題なく起動する（ことがある）。
+### google ドキュメント
+---
+- Code Blocks: コードをハイライトするアドオン ([参考](https://qiita.com/fbp-yamashita/items/a85302ee3b70fa407eb5))
 
 ### 英語
 ---
@@ -167,6 +175,7 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 - [Karabiner](https://pqrs.org/osx/karabiner/): キーボードの割り付けを行える。外付けキーボードを使用する際には必須。Windows用キーボードをMac用に設定するには[こちらの記事](https://mainguild.com/how-to-karabiner-elements/)が参考になる。Python書くときに便利なセミコロンをコロンにする方法は[こちら](https://pycarnival.com/semicolontocolon/)。  
 - [BackgroundMusic](https://github.com/kyleneideck/BackgroundMusic): アプリごとに細かい音量調整が行える。
 - Time machine: 最初から入っている。バックアップに便利。PCのストレージ容量が10GBを切るとうまくバックアップされないことがあるので注意。
+- [OnyX](https://www.titanium-software.fr/en/onyx.html): お掃除アプリ。「メンテナンス」を実行すると不要なログファイルなどを削除してくれる。この後にセーフモードで再起動すればある程度は容量が空く。
 <br>
 
 
@@ -190,7 +199,7 @@ git push origin master
 
 ### QIIME2のインストール（後で正式なものを作成する）
 ---
-- pyenvにインストールする場合
+#### pyenvにインストールする場合
 ```sh
 #minicondaのインストール 
 pyenv install —list 
@@ -228,8 +237,17 @@ conda deactivate
 ```
 - なお、[QIIME2の公式マニュアル](https://docs.qiime2.org/2019.4/install/native/)での起動は上記の通りだが、QIIME2インストール終了後に表示される起動方法は「conda activate qiime2-2019.4」だった。
 - anaconda3-5.3.1にはなぜかインストールできなかった。  
-- 上記の方法でできなければVirtual BoxかDockerで入れることも可能。  
+- 上記の方法でできなければVirtual BoxかDockerで入れることも可能。
+#### Dockerでインストールする場合
+```sh
+docker pull qiime2/core:2019.7
+docker run -t -i -v $(pwd):/data qiime2/core:2019.7 qiime #ヘルプが表示されれば成功
+```  
 <br>  
+
+### Adobe
+---
+- Illustrator 2019では「テンプレートとして保存」をクリックしても管理者権限がないと表示される。一度別の場所に保存し、「/Applications/Adobe Illustrator CC 2019/Cool Extras/ja_JP/テンプレート」に移動させれば良い（このときパスワードの入力が必要）。[参考](https://forums.adobe.com/thread/2569345)
 
 ### R
 ---
@@ -355,6 +373,7 @@ g5 <- ggplot(iris,
         geom_boxplot() + 
         geom_point() + 
         geom_line(group = iris$subject)
+        #データによってはgeom_line(aes(group = iris$subject))でないとうまく反映されないケースもある。
 
 #点が多くて見づらいので1種あたり6個にしてみる
 g6 <- ggplot(iris[seq(1, 150, 5), ], 
@@ -431,6 +450,7 @@ correct / 60
 - [先進ゲノム支援　中級者向け情報解析講習会](https://www.genome-sci.jp/lecture20181st): 2018年の11月19-21日に開催された講習会。Pythonプログラミングの基礎から多変量解析、機械学習まで。web上に動画及びコードも全てアップされているので独学も可能。
 - エントロピー: 生物学においては塩基配列の偏りを示す際に用いられる。0-2で塩基の偏りが強いほど0に近づく。[参考](https://slidesplayer.net/slide/16557467/)
 - 有限オートマトン: 主にモチーフ解析などに使用される。[参考](http://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-5.pdf)  
+- [CellMarker](http://biocc.hrbmu.edu.cn/CellMarker/index.jsp): 細胞のマーカー遺伝子を検索できる。 
 <br>  
 
 
