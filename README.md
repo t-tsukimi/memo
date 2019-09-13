@@ -254,6 +254,7 @@ docker run -t -i -v $(pwd):/data qiime2/core:2019.7 qiime #ヘルプが表示さ
 - install.pachageでソースファイルからインストールしようとするとコンパイルでこけることがある。その場合は"install from source?"という質問に対して"n"と回答すれば良い。
 ![](https://github.com/t-tsukimi/memo/blob/master/image/R_compilation.png)  
 - veganパッケージは2.5-1ではdbrda関数が使用できなかった。2.5-4にアップデートするとできた。 
+- プロットの解像度は画像保存系関数のresがdpiに対応している（論文では300 dpi以上が推奨されるのでres = 300を指定すれば良い）。[参考](http://www.proton.jp/main/apps/r/resolution.html)
 - 散布図
 ```r
 rm(list = ls())
@@ -438,6 +439,70 @@ correct / 60
 # [1] 0.9666667
 # 精度は2%ほど下がった。
 ```
+- 相関係数の算出と作図
+- 作図の体裁を整えるには「[データ科学便覧　Rによる散布図の描画](https://data-science.gr.jp/implementation/ida_r_scatter_plot.html)」などが参考になる。
+```r
+rm(list = ls())
+
+data(iris)
+head(iris)
+# Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+# 1          5.1         3.5          1.4         0.2  setosa
+# 2          4.9         3.0          1.4         0.2  setosa
+# 3          4.7         3.2          1.3         0.2  setosa
+# 4          4.6         3.1          1.5         0.2  setosa
+# 5          5.0         3.6          1.4         0.2  setosa
+# 6          5.4         3.9          1.7         0.4  setosa
+
+
+#花弁(Petal)の長さ(Length)と幅(Width)の相関をとってみる
+cor(iris$Petal.Length, iris$Petal.Width, method = "pearson")
+# [1] 0.9628654
+cor(iris$Petal.Length, iris$Petal.Width, method = "spearman")
+# [1] 0.9376668
+
+#相関係数の検定を行う
+cor.test(iris$Petal.Length, iris$Petal.Width, method = "pearson")
+# Pearson's product-moment correlation
+# 
+# data:  iris$Petal.Length and iris$Petal.Width
+# t = 43.387, df = 148, p-value < 2.2e-16
+# alternative hypothesis: true correlation is not equal to 0
+# 95 percent confidence interval:
+# 0.9490525 0.9729853
+# sample estimates:
+# cor 
+# 0.9628654 
+cor.test(iris$Petal.Length, iris$Petal.Width, method = "spearman")
+# Spearman's rank correlation rho
+# 
+# data:  iris$Petal.Length and iris$Petal.Width
+# S = 35061, p-value < 2.2e-16
+# alternative hypothesis: true rho is not equal to 0
+# sample estimates:
+# rho 
+# 0.9376668 
+# 
+# 警告メッセージ: 
+# cor.test.default(iris$Petal.Length, iris$Petal.Width, method = "spearman") で: 
+# タイのため正確な p 値を計算することができません 
+
+#プロットしてみる
+plot(iris$Petal.Length, iris$Petal.Width)
+#回帰曲線を追加する
+lr <- lm(iris$Petal.Width ~ iris$Petal.Length) #回帰直線のモデルを作成
+abline(lr) #plotに追記
+
+#ファイルに保存
+png("190913_correlation_lm.png", width = 1440, height = 1440, res = 300)
+plot(iris$Petal.Length, iris$Petal.Width)
+lr <- lm(iris$Petal.Width ~ iris$Petal.Length)
+abline(lr)
+dev.off()
+![](https://github.com/t-tsukimi/memo/blob/master/image/190913_correlation_lm.png)  
+```
+
+
 <br>  
 
 ### プレゼン
