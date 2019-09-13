@@ -499,8 +499,9 @@ plot(iris$Petal.Length, iris$Petal.Width)
 lr <- lm(iris$Petal.Width ~ iris$Petal.Length)
 abline(lr)
 dev.off()
-![](https://github.com/t-tsukimi/memo/blob/master/image/190913_correlation_lm.png)  
 ```
+![](https://github.com/t-tsukimi/memo/blob/master/image/190913_correlation_lm.png)  
+
 
 
 <br>  
