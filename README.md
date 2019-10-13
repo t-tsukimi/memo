@@ -501,7 +501,17 @@ abline(lr)
 dev.off()
 ```
 ![](https://github.com/t-tsukimi/memo/blob/master/image/190913_correlation_lm.png)  
+- dada2をインストール（[参考](http://benjjneb.github.io/dada2/dada-installation.html)）
+- インストール時に「These packages have more recent versions available. Which would you like to update?」と聞かれて、「1: All」と入力してエラーが出る場合は「3: None」を選択する。
 
+```r
+install.packages("devtools")
+library("devtools")
+devtools::install_github("benjjneb/dada2", ref="v1.12")
+#* DONE (dada2)
+
+library("dada2")
+```
 
 
 <br>  
