@@ -36,6 +36,7 @@ Last update:2019-04-19
 - デバッグはF5で開始し、F10で1行ずつ実行することが可能。行番号左をクリックすることでブレークポイントの設定ができる。
 - デフォルトのPythonへのPathはsettings.json内のpython.pythonPathで変更できる。ない場合は追記すればいい([参考](https://code.visualstudio.com/docs/python/settings-reference#_general-settings))。  
 - pythonインタープリタに作成した環境が出ないときは、setting.jsonに読み込む環境を指定する。[参考](https://tekunabe.hatenablog.jp/entry/2018/12/28/vscode_venv_default_rolad)
+- pythonを使うならAnaconda Navigatorで仮想環境構築、VS Codeでinterpreter選択、「# %%」でjupyter notebook形式にして、plotやvariableを確認しながらがやりやすいか（[参考](https://qiita.com/surei/items/9f25d7efa7c67d55d98f)）。
 <br>
 
 ### Python3
@@ -121,6 +122,7 @@ rm -rf ~/Library/Containers/com.docker.docker/Data/*
 - [inMeXes](https://docman.dbcls.jp/im/)：論文に頻出する単語・熟語を高速に検索できる。統合TVで[使い方動画](https://togotv.dbcls.jp/20180126.html)が公開されている。  
 - [Life Science Dictionary Tool WebExtension](https://chrome.google.com/webstore/detail/life-science-dictionary-t/glamiehbjfdcihghdlcjlckipojhnocp/related?hl=ja)：chromeの拡張機能。マウスオーバーで英訳が表示される。  
 - constrain: 辞書的な意味だと「束縛する」や「規制する」だが、「条件を設定する」のようなニュアンスか。[この論文](https://science.sciencemag.org/content/363/6423/181)のサプリp1下から4行目など。
+- [Dily Easy English Expression](https://www.youtube.com/channel/UCQyQinUTGYTpTz6TTS__xBQ): Youtubeの英語学習チャンネル。1回あたり3-5分なので続けやすい。英語初級者向けで日常会話中心。
 <br>
 
 ### プログラミング学習
@@ -166,7 +168,7 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 - [変数の置換方法](https://qiita.com/aosho235/items/c36568830a8d47288284)。  
 <br>
 
-### Macに入れると捗るもの
+### Mac
 ---
 - [homebrew](https://brew.sh/index_ja): 様々なツールを「brew ○○」でインストールできる。
 - [HyperSwitch](https://bahoom.com/hyperswitch): WindowsのAlt + tabのようにウインドウ単位で切り替えができる。
@@ -176,6 +178,7 @@ nyancat #nyancatが走るだけ、疲れたときは永久に見ていられる
 - [BackgroundMusic](https://github.com/kyleneideck/BackgroundMusic): アプリごとに細かい音量調整が行える。
 - Time machine: 最初から入っている。バックアップに便利。PCのストレージ容量が10GBを切るとうまくバックアップされないことがあるので注意。
 - [OnyX](https://www.titanium-software.fr/en/onyx.html): お掃除アプリ。「メンテナンス」を実行すると不要なログファイルなどを削除してくれる。この後にセーフモードで再起動すればある程度は容量が空く。
+- [Keynoteショートカット](https://support.apple.com/kb/PH24313?viewlocale=ja_JP&locale=en_US)
 <br>
 
 
@@ -546,9 +549,11 @@ library("dada2")
 
 
 
-### 文章・レポート作成
+### 
+論文・文章作成
 ---
 - [菌名の記載ルール](http://kuchem.kyoto-u.ac.jp/seika/shiraishi/note/report.html)
+- [Colil](http://colil.dbcls.jp/browse/papers/): 文献がどのように引用されているかを検索できる。
 <br>  
 
 ### 分類
