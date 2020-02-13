@@ -15,6 +15,11 @@ Last update:2019-04-19
 - Windows用は[こちら](http://www2.cudo.jp/wp/?p=4966)  
 ![](https://github.com/t-tsukimi/memo/blob/master/image/universal_color_palette-3.png)  
 
+[イラストレーター用ユニバーサルカラースウォッチ](https://jfly.uni-koeln.de/colorset/)
+- 東京大学分子細胞生物学研究所のHPにて配布されている。
+- ダウンロードしたaiファイルをアプリケーション→イラストレーター→Presets→ja_JP内に保存すれば良い。
+- 使用するときはスウォッチ→右上の設定？→スウォッチライブラリを開く。
+
 
 [Sim Daltonism](https://michelf.ca/projects/mac/sim-daltonism/)
 - 異なる色覚多様性を持つ人にとってPC上の画像がどのように見えるかシミュレーションするMacアプリ。  
@@ -37,6 +42,8 @@ Last update:2019-04-19
 - デフォルトのPythonへのPathはsettings.json内のpython.pythonPathで変更できる。ない場合は追記すればいい([参考](https://code.visualstudio.com/docs/python/settings-reference#_general-settings))。  
 - pythonインタープリタに作成した環境が出ないときは、setting.jsonに読み込む環境を指定する。[参考](https://tekunabe.hatenablog.jp/entry/2018/12/28/vscode_venv_default_rolad)
 - pythonを使うならAnaconda Navigatorで仮想環境構築、VS Codeでinterpreter選択、「# %%」でjupyter notebook形式にして、plotやvariableを確認しながらがやりやすいか（[参考](https://qiita.com/surei/items/9f25d7efa7c67d55d98f)）。
+- 関数を補完したときに括弧を自動入力: setting.jsonに「"python.autoComplete.addBrackets": true」と記載
+- タブ補完した関数の括弧まで自動で入力して欲しいとき: setting.jsonに"python.autoComplete.addBrackets": trueを追記。
 <br>
 
 ### Python3
@@ -251,6 +258,10 @@ docker run -t -i -v $(pwd):/data qiime2/core:2019.7 qiime #ヘルプが表示さ
 ### Adobe
 ---
 - Illustrator 2019では「テンプレートとして保存」をクリックしても管理者権限がないと表示される。一度別の場所に保存し、「/Applications/Adobe Illustrator CC 2019/Cool Extras/ja_JP/テンプレート」に移動させれば良い（このときパスワードの入力が必要）。[参考](https://forums.adobe.com/thread/2569345)
+- オブジェクトの順番を変更する: オブジェクト->重ね順（[参考](https://meishido.info/creation/data/illustrator/289/)）
+- 画像をドラッグして埋め込み: Shift押しながらドラッグ（[参考](https://jdash.info/archives/51899680.html)）
+- pdfなどの図形を拡大・縮小したときに線の太さが変わらないようにする: オブジェクト->変形->拡大・縮小->「線幅と効果も拡大・縮小」にチェックを入れる（[参考](https://www.illareya.net/post-1296.html)）
+
 
 ### R
 ---
@@ -516,6 +527,11 @@ devtools::install_github("benjjneb/dada2", ref="v1.12")
 library("dada2")
 ```
 
+- Rを実行していて下記のエラーが出るとき: [こちら](https://codeday.me/jp/qa/20190429/728651.html)に対応方法が記載されているが、このデータが出る時点で何らかのミスをしている可能性が高い（永遠に再帰されているなど）ので、コードを確認した方が良い。
+```r
+Error : C stack usage  数字 is too close to the limit
+```
+
 
 <br>  
 
@@ -530,6 +546,9 @@ library("dada2")
 - エントロピー: 生物学においては塩基配列の偏りを示す際に用いられる。0-2で塩基の偏りが強いほど0に近づく。[参考](https://slidesplayer.net/slide/16557467/)
 - 有限オートマトン: 主にモチーフ解析などに使用される。[参考](http://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-5.pdf)  
 - [CellMarker](http://biocc.hrbmu.edu.cn/CellMarker/index.jsp): 細胞のマーカー遺伝子を検索できる。 
+- 生物の持つ遺伝子を検索する（web）: pubmedで「genome」を選択して、検索→genome annotationの「tabular」formatをクリック→キーワードを入れてSearch。
+- soft core geneは比較するサンプルの95%以上で共通する遺伝子を指す。これを定義している論文[10.1186/1471-2164-13-577](https://doi.org/10.1186/1471-2164-13-577)。この論文を引用している論文[10.1186/s12864-018-4601-5](https://dx.doi.org/10.1186%2Fs12864-018-4601-5)
+- roaeyはデフォルトでサンプルの99%以上に存在している遺伝子をcore geneとして抽出する。100以上のサンプルがあり、全サンプルに共通するものをcore geneとして定義したい場合、-cdオプションを100に設定する必要がある。[公式ドキュメント(Why is there a sudden increase in the core genome size every 100 genomes>)](https://sanger-pathogens.github.io/Roary/)
 <br>  
 
 
@@ -567,6 +586,12 @@ library("dada2")
 - ブートストラップサンプリング: N個の標本から<u>**重複を許して**</u>N個をサンプリングすること。
 - OOB(Out-Of-Bag): ブートストラップサンプリングで選ばれなかったサンプル。これを用いてモデル精度が評価される(OOB error)。理論的にはネイピア数の逆数(約36%)になる。[参考](https://qiita.com/kenmatsu4/items/1152d6e5634921d9246e)
 
+### 系統解析
+---
+- 系統学における「basal」は系統樹上で分岐が古い物を示す。昔は「原始的」とも言った。[参考](https://www.s.u-tokyo.ac.jp/ja/press/2012/14.html)
+- 「basal leneage」は誤解を与える可能性があるので使用しない方が無難。[論文](https://onlinelibrary.wiley.com/doi/full/10.1111/j.0307-6970.2004.00262.x)・[slide share](https://www.slideshare.net/leeswijzer/minaka-sesj2018-slideshare)。
+- [単系統・側系統・多系統](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/monophyly.html)
+
 ### バックアップ
 ---
 - BaffaloのNASをTime Machineの保存先に設定する([参考](https://www.buffalo.jp/support/faq/detail/15092.html))。Webからの設定は反映に時間がかかることがある。
@@ -588,6 +613,7 @@ library("dada2")
 3. スキャナの状態が読み取られるので、確認してスキャンをクリック
 
 
-### 危機管理
+### 危機管理・安全管理
 ---
-[重大事故のときにどうするか](https://note.mu/mmiya/n/n746eb2e36f81): ヤフー重大事故のときに陣頭指揮をとられた人の記事。リーダーが行うべき10項目が記されている。
+- [重大事故のときにどうするか](https://note.mu/mmiya/n/n746eb2e36f81): ヤフー重大事故のときに陣頭指揮をとられた人の記事。リーダーが行うべき10項目が記されている。
+- [厚生労働省コントロール・バンディング](https://anzeninfo.mhlw.go.jp/user/anzen/kag/ankgc07_1.htm): 試薬の名称や量、使用方法などを入力するとリスクを見積もってくれる。
