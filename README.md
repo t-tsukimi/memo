@@ -557,6 +557,7 @@ Error : C stack usage  数字 is too close to the limit
 - [とてもとても難しい 一般化線形モデル with R](http://cogpsy.educ.kyoto-u.ac.jp/personal/Kusumi/datasem13/shrasuna1.pdf): 一般化線型モデルについてコンパクトにまとまっている。
 - [感度・特異度・ROCK曲線(藤田保健衛生大学柿崎先生)](http://jeaweb.jp/activities/files/contest2016_1.pptx): 2016年度日本疫学会スライドコンテスト受賞作品、イメージ図が多く使われており分かりやすい。
 - [医療統計勉強会-第5回比率と分割表(東北大学宮田先生)](http://www.cardio.med.tohoku.ac.jp/newmember/pdf/ms/15_5T.pdf): 具体的なデータが用いられているので上の資料でイメージをつかんでもらった後におすすめ。
+- [箱ひげ図はデータのばらつきをうまく表現できない](https://www.autodeskresearch.com/publications/samestats)。
 
 <br>  
 
