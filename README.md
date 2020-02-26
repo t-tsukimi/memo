@@ -574,6 +574,8 @@ Error : C stack usage  数字 is too close to the limit
 ---
 - [菌名の記載ルール](http://kuchem.kyoto-u.ac.jp/seika/shiraishi/note/report.html)
 - [Colil](http://colil.dbcls.jp/browse/papers/): 文献がどのように引用されているかを検索できる。
+- ワードの目次が大文字になる：目次→ユーザー設定の目次→変更→変更→フォント→「すべて大文字」のチェエクをはずす。[参考](https://blog3.logosware.com/archives/806)
+- ワードで自動的にスタイルに番号付け：スタイルを適用した上で、アウトライン→新しいアウトラインを定義→オプション→レベルと対応付ける見出しスタイル、で番号をつけたいスタイルを選択。[参考](crie.co.jp/chokotech/detail/248/)
 <br>  
 
 ### 分類
